@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    cursor: default;
+}
+body{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 21%, rgba(7,153,88,1) 40%, rgba(5,170,27,1) 57%, rgba(171,3,185,0.9836309523809523) 73%, rgba(0,212,255,1) 100%);
+    overflow: hidden;
+    background-image: url("wallpaper.png");
+}
+#container{
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+#main{
+    border: 3px solid rgba(241, 79, 4, 0.137);
+    outline: 3px ridge rgba(4, 231, 16, 0.363);
+    border-radius: 10px;
+    -moz-outline-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30vw;
+    height: auto;
+    backdrop-filter: blur(4px);
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#main #p{
+    color: red;
+    background-color: rgba(0, 255, 234, 0.438);
+    padding: 2px 100px;
+    font-weight: bold;
+    text-decoration: underline wavy blue 5px;
+}
+.l, .l p{
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.o{
+    padding: 5px;
+    border: 3px solid rgba(241, 79, 4, 0.137);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    /* background-image: url(https://source.unsplash.com/158x100/?nature,water); */
+    color: red;
+    font-weight: bold;
+    width: 19vw;
+    height:auto;
+    justify-content:center;
+    align-items: flex-start;
+    background-color: rgba(127, 157, 255, 0.637);
+}
+span{
+    color: aqua;
+}
+#img{
+    position: absolute;
+    bottom: 0;
+    left: 15vw;
+}
+abbr{
+    text-decoration: none;
+}
+.d{
+    border-radius: 10px;
+    background-color: black;
+    padding: 0px 10px;
+}
+/* MOdal */
+#del{
+    position: absolute;
+    top: 0px;
+    right: 1vw;
+}
+#container{
+    display: none;
+}
+#modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+#search{
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: rgba(13, 19, 12, 0.356);
+    text-align: center;
+    font-size: large;
+    color: white;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+button{
+    margin-top: 5px;
+    background-color: rgb(0, 119, 255);
+    border: none;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+@media only screen and (max-width:600px){
+    #main{
+        width: 93vw;
+    }
+    .o{
+        width: 55vw;
+    }
+    #img{
+        left: 50vw;
+    }
+}

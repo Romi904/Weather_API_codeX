@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>WEATHER</title>
+</head>
+<body>
+    <div id="modal">
+        <div id="main">
+            <p id="p">WEATHER</p>
+            <input id="search" type="text" placeholder="Enter City Name">
+            <button id="btn">🔎</button>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="main">
+            <span id="del">❌</span>
+            <p id="p">WEATHER</p>
+            <p class="d" id="name" class="l"></p><span class="d" id="code"></span>
+            <div class="o">
+                <div class="l">
+                    <p>Temp - </p><span id="temp">32&deg;</span><abbr title="Feels Like"><sup id="sup"></sup></abbr>
+                </div>
+                <div class="l">
+                    <p>Wind - </p><span id="wind">--</span>
+                </div>
+                <div class="l">
+                    <p>Humidity - </p><span id="hum">--</span>
+                </div>
+                <div class="l">
+                    <p>Weather - </p><span id="cloud">--</span><img id="img">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
