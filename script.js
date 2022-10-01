@@ -15,6 +15,7 @@ const btn=document.getElementById('btn');
 let apikey = "1257d86d688b614612edfd576d0a2a1c";
 let city="Howrah";
 // city = prompt('Enter City Name');
+//popop
 btn.addEventListener('click',()=>{
     city=document.getElementById('search').value;
     document.getElementById('modal').style.display="none";
